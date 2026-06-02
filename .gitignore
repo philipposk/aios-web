@@ -1,0 +1,10 @@
+.DS_Store
+node_modules/
+.next/
+.env*.local
+!.env.local.example
+*.log
+
+# backend lives in its own repo; not part of the site deploy
+/ai_company
+archive/
