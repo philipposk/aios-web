@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Geist } from "next/font/google";
 import "./globals.css";
+import PageAssistantWidget from "@/components/PageAssistantWidget";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 
@@ -48,6 +49,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             6x7.gr
           </a>
         </footer>
+        <PageAssistantWidget />
       </body>
     </html>
   );

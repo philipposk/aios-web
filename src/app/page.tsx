@@ -59,7 +59,7 @@ export default function Home() {
         <div style={{ display: "flex", gap: "0.5rem", flexWrap: "wrap", marginBottom: "1.25rem" }}>
           <span className="pill"><span className="dot" /> Runs on your machine</span>
           <span className="pill">Free by default</span>
-          <span className="pill">318 / 318 tests passing</span>
+          <span className="pill">331 tests · CI-safe (no live LLM calls)</span>
         </div>
 
         <p className="eyebrow" style={{ marginBottom: "0.9rem" }}>The AI coding agent you supervise</p>
@@ -185,7 +185,7 @@ export default function Home() {
             <pre className="codeblock">
               <span className="c"># grab the code</span>{"\n"}
               git clone {GITHUB_URL}.git{"\n"}
-              cd AI-OS/ai_company{"\n\n"}
+              cd AI-OS{"\n\n"}
               <span className="c"># one-shot setup</span>{"\n"}
               ./infrastructure/deploy.sh
             </pre>
