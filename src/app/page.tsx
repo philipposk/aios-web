@@ -20,34 +20,34 @@ const CHECKPOINTS = [
 
 const FEATURES = [
   {
-    icon: "🛑",
+    kicker: "Control",
     title: "You stay in control",
-    body: "Three human checkpoints — plan, code, commit. Each is a real pause, not a notification you can miss.",
+    body: "Three human checkpoints: plan, code, commit. Each is a real pause, not a notification you can miss.",
   },
   {
-    icon: "💸",
+    kicker: "Cost",
     title: "Cheap by default",
     body: "Routes through free AI providers and rotates between them. A hard spending cap stops surprise bills before any call is made.",
   },
   {
-    icon: "🧪",
+    kicker: "Ship",
     title: "Real software work",
-    body: "It doesn't just suggest — it edits files, runs the tests, reviews its own diff, and commits. End to end.",
+    body: "It doesn't just suggest. It edits files, runs the tests, reviews its own diff, and commits. End to end.",
   },
   {
-    icon: "💻",
+    kicker: "Local",
     title: "Runs on your machine",
     body: "Your code, your keys, your computer. Nothing is uploaded to a service you don't control.",
   },
   {
-    icon: "🧠",
+    kicker: "Memory",
     title: "Remembers your project",
     body: "Keeps a searchable memory of past work and decisions, so you repeat yourself less over time.",
   },
   {
-    icon: "🔌",
+    kicker: "Access",
     title: "Use it your way",
-    body: "A web dashboard, a chat page, the command line, or Slack and Telegram — same engine behind each.",
+    body: "A web dashboard, a chat page, the command line, or Slack and Telegram. Same engine behind each.",
   },
 ];
 
@@ -158,7 +158,7 @@ export default function Home() {
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "1rem" }}>
           {FEATURES.map((f) => (
             <div key={f.title} className="glass" style={{ padding: "1.5rem" }}>
-              <div style={{ fontSize: "1.6rem", marginBottom: "0.7rem" }}>{f.icon}</div>
+              <p className="eyebrow" style={{ marginBottom: "0.5rem" }}>{f.kicker}</p>
               <h3 style={{ fontWeight: 700, marginBottom: "0.5rem", fontSize: "1.02rem" }}>{f.title}</h3>
               <p style={{ color: "var(--fg-muted)", fontSize: "0.9rem", lineHeight: 1.55 }}>{f.body}</p>
             </div>
