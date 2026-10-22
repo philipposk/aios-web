@@ -1,0 +1,12 @@
+# AI OS
+
+> Many AI agents, one team. A multi-agent workspace that plans, writes and ships code, with you in the loop.
+
+## Pages
+- / — Overview and demo video
+
+## Source
+- https://github.com/philipposk/AI-OS
+
+## Contact
+Built on the 6x7 platform (https://6x7.gr)

@@ -6,6 +6,19 @@ import PageAssistantWidget from "@/components/PageAssistantWidget";
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://aios.6x7.gr"),
+  alternates: { canonical: "/" },
+  manifest: "/manifest.webmanifest",
+  openGraph: {
+    title: "AI OS",
+    description: "Many AI agents, one team. Plans, writes, ships code, with you in the loop.",
+    url: "https://aios.6x7.gr",
+    siteName: "AI OS",
+    type: "website",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "AI OS" }],
+  },
+  twitter: { card: "summary_large_image", title: "AI OS", description: "Many AI agents, one team. Plans, writes, ships code, with you in the loop.", images: ["/og-image.png"] },
+  icons: { icon: "/icon.svg", apple: "/icon-192.png" },
   title: "AI OS — Multi-agent workspace",
   description:
     "Many AI agents, one team. Plans, writes, ships code — with you in the loop.",
