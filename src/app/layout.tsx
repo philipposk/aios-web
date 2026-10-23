@@ -2,10 +2,12 @@ import type { Metadata, Viewport } from "next";
 import { Geist } from "next/font/google";
 import "./globals.css";
 import PageAssistantWidget from "@/components/PageAssistantWidget";
+import { SiteJsonLd } from "@/components/SiteJsonLd";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  robots: { index: true, follow: true },
   metadataBase: new URL("https://aios.6x7.gr"),
   alternates: { canonical: "/" },
   manifest: "/manifest.webmanifest",
@@ -33,6 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${geistSans.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col">
+        <SiteJsonLd />
         <nav
           style={{ borderBottom: "1px solid rgba(255,255,255,0.06)" }}
           className="px-6 py-4 flex items-center justify-between"
